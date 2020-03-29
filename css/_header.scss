@@ -19,10 +19,10 @@ header{
                         .cart-block{
                             position: absolute;
                             width: 280px;
-                            top: 70px;
+                            top: 55px;
                             right: 40px;
                             z-index: 10;
-                            visibility: hidden;
+                            display: none;
                             .card-body{
                                 img{
                                     max-width: 100%;
@@ -43,6 +43,13 @@ header{
                                     &:hover .col-3{
                                         transform: scale(1.05);
                                     }
+                                    &:not(:last-child)::after{
+                                        content: '';
+                                        display: block;
+                                        border-bottom: 1px solid #ccc;
+                                        width: 100%;
+                                        margin-bottom: 10px;
+                                    }
                                 }
                             }
                             .card-footer{
@@ -60,7 +67,7 @@ header{
                                 }
                             }
                             &:hover{
-                                visibility: visible;
+                                display: block;
                             }
                         }
                         .cart-icon{
@@ -72,7 +79,7 @@ header{
                             }
                         }
                         &:last-child:hover .cart-block{
-                            visibility: visible;
+                            display: block;
                         }
                     }
                 }

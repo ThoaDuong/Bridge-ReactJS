@@ -35,10 +35,10 @@ header menu nav #bridge-nav ul li:not(:last-child):hover .nav-link {
 header menu nav #bridge-nav ul li .cart-block {
   position: absolute;
   width: 280px;
-  top: 70px;
+  top: 55px;
   right: 40px;
   z-index: 10;
-  visibility: hidden;
+  display: none;
 }
 
 header menu nav #bridge-nav ul li .cart-block .card-body img {
@@ -69,6 +69,14 @@ header menu nav #bridge-nav ul li .cart-block .card-body .cart-item:hover .col-3
           transform: scale(1.05);
 }
 
+header menu nav #bridge-nav ul li .cart-block .card-body .cart-item:not(:last-child)::after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
 header menu nav #bridge-nav ul li .cart-block .card-footer {
   background-color: #fff;
 }
@@ -88,7 +96,7 @@ header menu nav #bridge-nav ul li .cart-block .card-footer .cart-footer-a:hover 
 }
 
 header menu nav #bridge-nav ul li .cart-block:hover {
-  visibility: visible;
+  display: block;
 }
 
 header menu nav #bridge-nav ul li .cart-icon {
@@ -102,7 +110,7 @@ header menu nav #bridge-nav ul li .cart-icon span {
 }
 
 header menu nav #bridge-nav ul li:last-child:hover .cart-block {
-  visibility: visible;
+  display: block;
 }
 
 .slider {
@@ -406,12 +414,12 @@ footer .footer__copyright .facebook-a:hover {
 
 section .title {
   background: url("../images/about-title-image-1.jpg") fixed;
-  padding: 200px 0 80px 0;
+  padding: 100px 0 40px 0;
   text-align: center;
 }
 
 section .title h1 {
-  font-size: 70px;
+  font-size: 60px;
 }
 
 section .title p {
